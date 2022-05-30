@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+.tabs-container {
+    width: 1200px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.about-container {
+    width: 100%;
+}
+
+.about-container > h3 {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.about-container > p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #545454;
+}
+
+.about-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin: 50px auto;
+}
+
+.about-center .about-img {
+    margin-bottom: 0;
+}
+
+.about-img img {
+    border-radius: 0.5rem;
+    object-fit: cover;
+    width: 100%;
+}
+
+.about-center .about {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about .btn-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.about .btn-container .tab-btn:nth-child(1) {
+    border-top-left-radius: 0.5rem;
+}
+
+.about .btn-container .tab-btn:nth-last-child(1) {
+    border-top-right-radius: 0.5rem;
+}
+
+
+.about .btn-container .tab-btn {
+    border: none;
+    background-color: #d6d6d6;
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.about .about-content {
+    background-color: #eeeeee;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding: 25px;
+}
+
+.about .about-content .content {
+    display: none;
+}
+
+.about .about-content .content > h4 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.20rem;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.about .about-content .content > p {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    color: #617d98;
+}
+
+.active {
+    display: block !important;
+    background-color: #f0f0f0 !important;
+}
