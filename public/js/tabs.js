@@ -1,9 +1,6 @@
 const contents = document.querySelectorAll('.content');
 const buttons = document.querySelectorAll('.tab-btn');
-
-const historyBtn = buttons[0];
-const visionBtn = buttons[1];
-const goalsBtn = buttons[2];
+const [historyBtn, visionBtn, goalsBtn] = buttons;
 
 historyBtn.addEventListener('click', ()=> {
     addActive(buttons, 0);
